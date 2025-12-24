@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Saya</title>
+    <link rel="stylesheet" href="style/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Muhammad <span>Wisnhu</span> Erlangga</div>
+    
+        <ul class="nav-links" id="nav-menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">Tentang</a></li>
+            <li><a href="#projects">Projek</a></li>
+            <li><a href="#contact">Kontak</a></li>
+        </ul>
+
+        <div class="hamburger" id="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <h1>Halo, Saya <span>Junior Web Developer</span></h1>
+            <p>Membangun website dengan HTML, CSS, dan JavaScript.</p>
+            <a href="#projects" class="btn">Lihat Karya Saya</a>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>Projek Saya</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <img src="https://via.placeholder.com/300" alt="Project 1">
+                <h3>Website Restoran</h3>
+                <p>Dibuat dengan HTML & CSS.</p>
+            </div>
+            <div class="project-card">
+                <img src="https://via.placeholder.com/300" alt="Project 2">
+                <h3>Aplikasi To-Do List</h3>
+                <p>Manipulasi DOM dengan JavaScript.</p>
+            </div>
+            <div class="project-card">
+                <img src="https://via.placeholder.com/300" alt="Project 3">
+                <h3>Landing Page</h3>
+                <p>Desain responsif dan modern.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Hubungi Saya</h2>
+        <form id="contact-form">
+            <input type="text" placeholder="Nama" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Pesan Anda" rows="5" required></textarea>
+            <button type="submit" class="btn">Kirim Pesan</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Muhammad Wisnhu Erlangga. All Rights Reserved.</p>
+    </footer>
+
+    <div class="modal-overlay" id="modal-success">
+        <div class="modal-content">
+            <div class="success-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+            </div>
+            <h3>Berhasil!</h3>
+            <p>Pesan Anda telah terkirim. Terima kasih telah menghubungi saya!</p>
+            <button class="btn" id="btn-close-modal">Tutup</button>
+        </div>
+    </div>
+
+    <script src="script/script.js"></script>
+</body>
+</html>
